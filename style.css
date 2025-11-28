@@ -1,0 +1,381 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Bai Jamjuree', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #4c545d;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px 150px;
+            background: url(Images/bg-header-desktop.png);
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* .logo::after {
+            content: 'C';
+            font-size: 52px;
+            color: white;
+            font-weight: 700;
+        } */
+
+        h1 {
+            font-size: 46px;
+            color: #4c545d;
+            margin-bottom: 24px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-description {
+            font-size: 20px;
+            color: #9fabb2;
+            max-width: 730px;
+            margin: 0 auto 48px;
+            line-height: 1.7;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 16px 38px;
+            border: none;
+            border-radius: 28px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-ios {
+            background: #26baa4;
+            color: white;
+            border-bottom-color: #1fa892;
+        }
+
+        .btn-ios:hover {
+            background: #1fa892;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(38, 186, 164, 0.4);
+        }
+
+        .btn-mac {
+            background: #6173ff;
+            color: white;
+            border-bottom-color: #4a5ce6;
+        }
+
+        .btn-mac:hover {
+            background: #4a5ce6;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(97, 115, 255, 0.4);
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 36px;
+            color: #4c545d;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .section-description {
+            font-size: 18px;
+            color: #9fabb2;
+            max-width: 730px;
+            margin: 0 auto 80px;
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 20px 160px;
+        }
+
+        .feature-content {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 80px;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .computer-mockup {
+            position: relative;
+            margin-left: -150px;
+        }
+
+        .computer-mockup img {
+            width: 100%;
+            max-width: 750px;
+            display: block;
+        }
+
+        .feature-list {
+            padding-right: 40px;
+        }
+
+        .feature-item {
+            margin-bottom: 56px;
+        }
+
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-item h3 {
+            font-size: 24px;
+            color: #4c545d;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .feature-item p {
+            font-size: 16px;
+            color: #9fabb2;
+            line-height: 1.8;
+        }
+
+        /* Access Section */
+        .access-section {
+            padding: 100px 20px 180px;
+            text-align: center;
+        }
+
+        .devices-mockup {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .devices-mockup img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Workflow Section */
+        .workflow {
+            padding: 60px 20px 140px;
+            text-align: center;
+        }
+
+        .workflow-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 80px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .workflow-item {
+            text-align: center;
+        }
+
+        .workflow-icon {
+            margin-bottom: 36px;
+        }
+
+        .workflow-icon img {
+            width: 44px;
+            height: 44px;
+        }
+
+        .workflow-item h3 {
+            font-size: 24px;
+            color: #4c545d;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+
+        .workflow-item p {
+            font-size: 16px;
+            color: #9fabb2;
+            line-height: 1.8;
+        }
+
+        /* Companies Section */
+        .companies {
+            padding: 80px 20px 160px;
+            text-align: center;
+        }
+
+        .companies-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 60px 80px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .company-logo img {
+            height: 40px;
+            opacity: 0.6;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 60px 20px 180px;
+            text-align: center;
+        }
+
+         /* Footer */
+        footer {
+            background: #f5f6f8;
+            padding: 50px 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 80px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        .footer-logo {
+            width: 55px;
+            height: 55px;
+        }
+
+        .footer-logo img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px 60px;
+        }
+
+        .footer-links a {
+            color: #4c545d;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #26baa4;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            color: #4c545d;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .social-icon:hover {
+            color: #26baa4;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .computer-mockup {
+                margin-left: 0;
+            }
+
+            .feature-content {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .feature-list {
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .hero-description,
+            .section-description {
+                font-size: 16px;
+            }
+
+            .workflow-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .btn-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .footer-links {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .companies-grid {
+                justify-content: center;
+            }
+        }
